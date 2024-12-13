@@ -6792,6 +6792,42 @@ const drive_settings builtin_knowndrives[] = {
     "",
     "-d sat"
   },
+  { "CFD MGAX Series", // Realtek
+    "CSSD-S6L(256|512|[12]T)MGAX ((256|512)G|[1|2]T)B",
+    "",
+    "",
+  //"-v 1,raw48,Raw_Read_Error_Rate "
+  //"-v 5,raw16(raw16),Reallocated_Sector_Ct "
+  //"-v 9,raw24(raw8),Power_On_Hours "
+  //"-v 12,raw48,Power_Cycle_Count "
+    "-v 161,raw48,GDN "
+    "-v 162,raw48,Total_Erase_Count "
+    "-v 163,raw48,Max_PE_Cycle "
+    "-v 164,raw48,Average_Erase_Count "
+    "-v 165,raw48,Initial_Bad_Block_Count "
+    "-v 166,raw48,Total_Bad_Block_Count "
+    "-v 167,raw48,SSD_Protect_Mode "
+    "-v 168,raw48,SATA_Phy_Error "
+    "-v 169,raw48,Health "
+    "-v 171,raw48,Program_Fail_Count "
+    "-v 172,raw48,Erase_Fail_Count "
+    "-v 174,raw48,Unexpected_PowerLoss_Ct "
+    "-v 175,raw48,ECC_Fail_Count "
+    "-v 181,raw16,Non4k_Aligned_Access "
+    "-v 187,raw48,Reported_Uncorrect "
+  //"-v 194,tempminmax,Temperature_Celsius "
+  //"-v 195,raw48,Hardware_ECC_Recovered "
+  //"-v 196,raw16(raw16),Reallocated_Event_Count "
+  //"-v 199,raw48,UDMA_CRC_Error_Count "
+    "-v 206,raw48,Min_Erase_Count "
+    "-v 207,raw48,Max_Erase_Count "
+    "-v 231,raw48,Lifetime_Left "
+    "-v 232,raw48,Available_Reserved_Spc "
+    "-v 241,raw48,Write_Life_Time "
+    "-v 242,raw48,Read_Life_Time "
+    "-v 249,raw48,Total_NAND_Writes_GiB "
+    "-v 250,raw48,Total_SLC_Writes_GiB "
+  },
 /*
 }; // builtin_knowndrives[]
  */
